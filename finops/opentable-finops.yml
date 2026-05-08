@@ -8,17 +8,16 @@ modified: '2026-05-08'
 reconciled: false
 tags:
 - Hospitality
-- Restaurant
 - Reservations
-- Booking
-- Booking Holdings
+- Restaurants
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for OpenTable. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: FOCUS-aligned FinOps profile. Restaurants pay platform SaaS + per-cover network fees; partner
+  API access is contractual.
+notes: Per-cover fees can dominate restaurant cost structure.
 sources:
-- https://www.opentable.com/
+- https://restaurant.opentable.com/products/
 - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
@@ -29,12 +28,12 @@ alignedWith:
 publisherName: OpenTable
 serviceCategory: Hospitality
 billingModel:
-  pricingCategory: To Be Reconciled
+  pricingCategory: Hybrid
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
-  - Usage
   - Purchase
+  - Usage
   - Adjustment
 focusColumns:
   ServiceName: OpenTable
@@ -45,13 +44,18 @@ focusColumns:
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: platform_saas
+  description: Monthly OpenTable platform subscription.
+  unit: subscription
   aggregation: sum
   dimensions:
-  - account
-  - resource
+  - restaurant
+- name: network_covers
+  description: Per-cover fees on bookings made via the OpenTable network.
+  unit: cover
+  aggregation: sum
+  dimensions:
+  - restaurant
 principles:
 - name: Visibility
   description: Pull provider invoices or usage exports until a self-serve usage feed is documented.

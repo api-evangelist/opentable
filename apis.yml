@@ -2,28 +2,54 @@ aid: opentable
 url: https://raw.githubusercontent.com/api-evangelist/opentable/refs/heads/main/apis.yml
 name: OpenTable
 x-type: company
-description: >-
-  OpenTable is a restaurant reservation platform owned by Booking Holdings, offering APIs for restaurants, availability, reservations, and partner integrations.
+description: OpenTable is a global restaurant reservation platform owned by Booking Holdings. The OpenTable
+  Partner Portal exposes restricted partner APIs for reservations, availability, restaurant content, reviews,
+  and CRM integrations to approved partners.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Hospitality
-  - Restaurant
-  - Reservations
-  - Booking
-  - Booking Holdings
+- Hospitality
+- Reservations
+- Restaurants
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: opentable:partner-api
+  name: OpenTable Partner API
+  description: Restricted REST API for approved partners covering restaurant content, availability, reservations,
+    and CRM. Access is granted through the OpenTable Partner Portal under contractual agreement.
+  humanURL: https://dev.opentable.com/partner-portal
+  tags:
+  - REST
+  - Partner
+  - Reservations
+  properties:
+  - type: Partner Portal
+    url: https://dev.opentable.com/partner-portal
+  - type: Marketing
+    url: https://platform.opentable.com/
+- aid: opentable:affiliate-api
+  name: OpenTable Affiliate / Restaurant Search Widgets
+  description: Widget and reservation embeds for affiliate sites, plus restaurant search/availability
+    for approved partners.
+  humanURL: https://dev.opentable.com/partner-portal
+  tags:
+  - Affiliate
+  - Widgets
+  properties:
+  - type: Partner Portal
+    url: https://dev.opentable.com/partner-portal
 common:
-  - type: Website
-    url: https://www.opentable.com/
-  - type: Plans
-    url: plans/opentable-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/opentable-rate-limits.yml
-  - type: FinOps
-    url: finops/opentable-finops.yml
+- type: Website
+  url: https://www.opentable.com/
+- type: Developer
+  url: https://dev.opentable.com/partner-portal
+- type: Plans
+  url: plans/opentable-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/opentable-rate-limits.yml
+- type: FinOps
+  url: finops/opentable-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
