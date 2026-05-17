@@ -1,7 +1,7 @@
 aid: opentable
 url: https://raw.githubusercontent.com/api-evangelist/opentable/refs/heads/main/apis.yml
 name: OpenTable
-x-type: company
+kind: company
 description: OpenTable is a global restaurant reservation platform owned by Booking Holdings. The OpenTable
   Partner Portal exposes restricted partner APIs for reservations, availability, restaurant content, reviews,
   and CRM integrations to approved partners.
