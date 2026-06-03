@@ -11,7 +11,7 @@ tags:
   - Reservations
   - Restaurants
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-06-03'
 specificationVersion: '0.19'
 apis:
   - aid: opentable:partner-api
@@ -24,8 +24,19 @@ apis:
     - Partner
     - Reservations
     properties:
-    - type: Partner Portal
+    - type: Documentation
+      url: https://docs.opentable.com/
+    - type: Portal
       url: https://dev.opentable.com/partner-portal
+    - type: SignUp
+      url: https://www.opentable.com/restaurant-solutions/api-partners/
+    - type: Sandbox
+      url: https://dev.opentable.com/partner-portal
+    - type: Authentication
+      url: https://docs.opentable.com/
+      title: Partner-issued API credentials (granted on approval)
+    - type: FAQ
+      url: https://www.opentable.com/restaurant-solutions/api-partners/faqs/
     - type: Marketing
       url: https://platform.opentable.com/
   - aid: opentable:affiliate-api
@@ -37,7 +48,11 @@ apis:
     - Affiliate
     - Widgets
     properties:
-    - type: Partner Portal
+    - type: Documentation
+      url: https://docs.opentable.com/
+    - type: SignUp
+      url: https://www.opentable.com/restaurant-solutions/api-partners/
+    - type: Portal
       url: https://dev.opentable.com/partner-portal
 common:
   - type: GitHubOrganization
@@ -48,6 +63,62 @@ common:
     url: https://www.opentable.com/
   - type: Developer
     url: https://dev.opentable.com/partner-portal
+  - type: Documentation
+    url: https://docs.opentable.com/
+  - type: Pricing
+    url: https://www.opentable.com/restaurant-solutions/plans/
+  - type: StatusPage
+    url: https://status.opentable.com/
+  - type: Support
+    url: https://support.opentable.com/
+  - type: FAQ
+    url: https://www.opentable.com/restaurant-solutions/api-partners/faqs/
+  - type: Tools
+    title: HorizonCalendar (Swift Calendar UI)
+    url: https://github.com/opentable/HorizonCalendar
+  - type: Tools
+    title: otj-pg-embedded (Java Embedded PostgreSQL)
+    url: https://github.com/opentable/otj-pg-embedded
+  - type: Tools
+    title: spur-ioc (Node.js Dependency Injection)
+    url: https://github.com/opentable/spur-ioc
+  - type: Tools
+    title: mercury-bot (Static Translation Bot)
+    url: https://github.com/opentable/mercury-bot
+  - type: Tools
+    title: eslint-config-opentable (Shared ESLint Config)
+    url: https://github.com/opentable/eslint-config-opentable
+  - type: Integrations
+    data:
+    - name: POS Integrations
+      description: OpenTable integrates with point-of-sale systems to sync reservations, covers, and guest
+        spend data with restaurant operations.
+    - name: CRM and Marketing Platforms
+      description: Guest profile, reservation, and review data can flow to partner CRM and marketing tools
+        through approved partner integrations.
+    - name: Affiliate and Booking Widgets
+      description: Affiliate sites and third-party platforms embed OpenTable reservation widgets and deep
+        links to surface real-time availability and drive bookings.
+  - type: Features
+    data:
+    - name: Restaurant Content and Directory
+      description: Programmatic access to restaurant profiles, locations, and metadata for approved partners.
+    - name: Availability and Reservations
+      description: Real-time table availability lookups and reservation booking for partner experiences.
+    - name: Reviews and Guest Data
+      description: Access to diner reviews and guest/CRM data for approved integrations under contract.
+    - name: Sandbox Environment
+      description: Approved partners receive a sandbox for discovery and testing before production access.
+  - type: UseCases
+    data:
+    - name: Embedded Restaurant Booking
+      description: Third-party apps and sites embed availability and booking flows to let diners reserve
+        tables without leaving the partner experience.
+    - name: Tech Stack Integration
+      description: Restaurants connect OpenTable to POS, CRM, and operations systems to unify reservation
+        and guest data.
+    - name: Affiliate Referrals
+      description: Affiliate partners surface OpenTable availability and earn from referred reservations.
   - type: Plans
     url: plans/opentable-plans-pricing.yml
   - type: RateLimits
