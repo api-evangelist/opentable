@@ -28,7 +28,7 @@ apis:
       url: https://docs.opentable.com/
     - type: Portal
       url: https://dev.opentable.com/partner-portal
-    - type: SignUp
+    - type: Signup
       url: https://www.opentable.com/restaurant-solutions/api-partners/
     - type: Sandbox
       url: https://dev.opentable.com/partner-portal
@@ -50,7 +50,7 @@ apis:
     properties:
     - type: Documentation
       url: https://docs.opentable.com/
-    - type: SignUp
+    - type: Signup
       url: https://www.opentable.com/restaurant-solutions/api-partners/
     - type: Portal
       url: https://dev.opentable.com/partner-portal
