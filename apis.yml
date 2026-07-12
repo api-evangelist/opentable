@@ -55,6 +55,8 @@ apis:
     - type: Portal
       url: https://dev.opentable.com/partner-portal
 common:
+  - type: DomainSecurity
+    url: security/opentable-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/opentable
   - type: LinkedIn
@@ -125,6 +127,8 @@ common:
     url: rate-limits/opentable-rate-limits.yml
   - type: FinOps
     url: finops/opentable-finops.yml
+  - type: Blog
+    url: https://www.opentable.com/blog/feed/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
