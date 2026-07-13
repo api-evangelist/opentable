@@ -1,0 +1,14 @@
+{
+  "repo": "opentable",
+  "feeds": [
+    {
+      "source": "https://www.opentable.com/blog/feed/",
+      "feed_url": "https://www.opentable.com/blog/feed/",
+      "title": "OpenTable Blog",
+      "saved": 0,
+      "error": "fetch_failed: TimeoutError"
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 9
+}
