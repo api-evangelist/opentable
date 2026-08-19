@@ -24,7 +24,7 @@ tags:
   - Restaurants
 created: '2026-05-08'
 modified: '2026-06-03'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: opentable:partner-api
     name: OpenTable Partner API
