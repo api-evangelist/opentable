@@ -21,6 +21,10 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/opentable.
 tags:
   - Hospitality
   - Reservations
+  - Restaurant
+tags_raw:
+  - Hospitality
+  - Reservations
   - Restaurants
 created: '2026-05-08'
 modified: '2026-06-03'
@@ -57,6 +61,9 @@ apis:
       for approved partners.
     humanURL: https://dev.opentable.com/partner-portal
     tags:
+    - Affiliates
+    - Widgets
+    tags_raw:
     - Affiliate
     - Widgets
     properties:
