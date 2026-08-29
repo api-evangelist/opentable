@@ -5,6 +5,17 @@ kind: company
 description: OpenTable is a global restaurant reservation platform owned by Booking Holdings. The OpenTable
   Partner Portal exposes restricted partner APIs for reservations, availability, restaurant content, reviews,
   and CRM integrations to approved partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
