@@ -48,6 +48,10 @@ apis:
     humanURL: https://dev.opentable.com/partner-portal
     tags:
     - REST
+    - Partners
+    - Reservations
+    tags_raw:
+    - REST
     - Partner
     - Reservations
     properties:
