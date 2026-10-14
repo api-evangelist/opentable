@@ -1,7 +1,9 @@
 generated: '2026-10-14'
 method: searched
 checked:
+- https://www.opentable.com/restaurant-solutions/integrations/
 - square/integrations/square-integration-edges.yml
+- toast/integrations/toast-integration-edges.yml
 source:
 - square/integrations/square-integration-edges.yml
 edges:
@@ -22,3 +24,29 @@ edges:
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
   category: New apps
+- partner_name: Toast (own)
+  partner: toast
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://pos.toasttab.com/partners/directory/opentable
+  mirror_of: toast/integrations/toast-integration-edges.yml
+  apps:
+  - OpenTable
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Reservations
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: opentable
+  url: https://www.opentable.com/restaurant-solutions/integrations/
+  app_count: null
+  adapter: sweep-restaurant-pos.py:unreadable
+  listed: 0
+  status: not-machine-readable (timed out to non-browser clients)
