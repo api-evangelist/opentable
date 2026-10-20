@@ -1,11 +1,26 @@
-generated: '2026-10-14'
+generated: '2026-10-20'
 method: searched
+source:
+- square/integrations/square-integration-edges.yml
+- https://www.opentable.com/restaurant-solutions/integrations/
 checked:
 - https://www.opentable.com/restaurant-solutions/integrations/
 - square/integrations/square-integration-edges.yml
 - toast/integrations/toast-integration-edges.yml
-source:
-- square/integrations/square-integration-edges.yml
+- https://composio.dev/toolkits/opentable
+- https://monid.ai/tools/opentable
+- https://n8n.io/integrations/opentable/
+- https://zapier.com/apps/opentable/integrations
+summary: null
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: opentable
+  url: https://www.opentable.com/restaurant-solutions/integrations/
+  app_count: null
+  adapter: sweep-restaurant-pos.py:unreadable
+  listed: 0
+  status: not-machine-readable (timed out to non-browser clients)
 edges:
 - partner_name: Square (own)
   partner: square
@@ -41,12 +56,4 @@ edges:
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
   category: Reservations
-marketplace_apps:
-- marketplace: own
-  channel: partner-built
-  app: opentable
-  url: https://www.opentable.com/restaurant-solutions/integrations/
-  app_count: null
-  adapter: sweep-restaurant-pos.py:unreadable
-  listed: 0
-  status: not-machine-readable (timed out to non-browser clients)
+templates: []
